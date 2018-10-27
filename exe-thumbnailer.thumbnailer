@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=exe-thumbnailer
+Exec=exe-thumbnailer %i %o %s %u
+MimeType=application/x-ms-dos-executable;application/x-msdownload;application/x-msi;application/x-ms-shortcut
