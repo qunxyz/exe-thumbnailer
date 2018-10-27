@@ -148,11 +148,8 @@ class ExtractIcon(object):
 def make_thumb(src, out, size):
     extractor = ExtractIcon(src)
     groups = extractor.get_group_icons()
-    img = extractor.export_raw(groups[0])
-    icon_path = ""
-    fd = open(out, "w")
-    fd.write(img)
-    fd.close()
+    img = extractor.export(groups[0])
+    img.save(out, "PNG")
     
     pass
 
